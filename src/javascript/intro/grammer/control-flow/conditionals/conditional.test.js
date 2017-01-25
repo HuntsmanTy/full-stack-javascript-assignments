@@ -11,9 +11,9 @@ Test('#greet() when age is under 18', t => {
 });
 
 Test(`#isTacoTuesday() when it's tuesday`, t => {
-  t.truthy(Assignment.isTacoTuesday('tuesday'));
+  t.truthy(Assignment.isTacoTuesday('Tuesday'));
 });
 
 Test(`#isTacoTuesday() when it's wednesday`, t => {
-  t.falsy(Assignment.isTacoTuesday('wednesday'));
+  t.falsy(Assignment.isTacoTuesday('Wednesday'));
 });
