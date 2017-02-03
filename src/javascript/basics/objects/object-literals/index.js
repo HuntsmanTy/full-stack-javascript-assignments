@@ -1,25 +1,25 @@
-const optimusPrime = {
-    name: "Optimus Prime",
-    faction: "Autobots",
-    power: 10000,
-    greet(){
-        return ("Hello I am "+ name)
-    }
-}
-
-const megatron = {
-    name: "Megatron",
-    faction: "Decepticon",
-    power: 10000,
-    greet(){
-        return ("Hello I am "+ name)
-    }
-}
 
 export const FACTIONS = {
-    Autobots: "Autobots",
-    Decepticon: "Decepticon"
-}
-console.log(optimusPrime);
-console.log(megatron);
-console.log(FACTIONS);
+    Autobots: 'autobots',
+    Decepticons: 'decepticons'
+};
+
+export const OptimusPrime = {
+    name: 'Optimus Prime',
+    faction: FACTIONS.Autobots,
+    power: 1000,
+    greet(){
+        return ('Hello I am '+ this.name)
+    }
+};
+
+export const Megatron = {
+    name: 'Megatron',
+    faction: FACTIONS.Decepticons,
+    power: 1000,
+    greet(){
+        return ('Hello I am '+ this.name)
+    }
+};
+
+
